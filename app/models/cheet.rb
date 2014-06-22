@@ -1,7 +1,7 @@
-class Posts
+class Cheet
 	include DataMapper::Resource
 
 	property :id, Serial
-	property :post, String
+	property :cheet, String
 
 end

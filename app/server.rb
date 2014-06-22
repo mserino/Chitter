@@ -6,6 +6,9 @@ require 'sinatra/partial'
 require_relative 'helpers/application'
 require_relative 'data_mapper_setup'
 
+require_relative 'controllers/application'
+require_relative 'controllers/cheets'
+
 enable :sessions
 set :session_secret, 'super secret'
 set :views, Proc.new{ File.join(root, 'views') }
