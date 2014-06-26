@@ -7,6 +7,6 @@ class Cheet
 	belongs_to :user
 
 	property :id, Serial
-	property :cheet, Text
+	property :cheet, Text, :required => true, :message => 'You cannot submit an empty cheet'
 
 end

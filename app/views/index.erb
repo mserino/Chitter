@@ -9,7 +9,7 @@
 <% end %>
 
 	<ul>
-		<% @cheets.each do |element| %>
+		<% @cheets.reverse_each do |element| %>
 			<li>
 				<p><%= element.cheet %></p>
 				<p>posted by <%= element.user.username %> </p>

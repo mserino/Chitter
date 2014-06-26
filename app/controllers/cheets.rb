@@ -1,6 +1,9 @@
 post '/new_cheet' do
-	current_user.cheets.create!(cheet: params[:cheet])
-	# @cheets = Cheet.all
-	# erb :index, :layout => :layout
-	redirect to '/'
+	@cheet = current_user.cheets.create!(cheet: params[:cheet])
+  if !@cheet.cheet.empty?
+  	redirect to('/')
+  else
+    flash[:notice] = 'You cannot submit an empty cheet'
+  	redirect to('/')
+  end
 end
