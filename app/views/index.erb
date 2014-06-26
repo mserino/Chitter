@@ -1,4 +1,18 @@
-<form action='/new_cheet' method='post'>
-	<input type='text' name='cheet'>
-	<input type='submit' value='Post!'>
-</form>
+<% if current_user %>
+	<form action='/new_cheet' method='post'>
+		<input type='text' name='cheet'>
+		<input type='submit' value='Post!'>
+	</form>
+
+<% else %>
+	<p>You must be logged in to add a cheet</p>
+<% end %>
+
+	<ul>
+		<% @cheets.each do |element| %>
+			<li>
+				<p><%= element.cheet %></p>
+				<p>posted by <%= element.user.username %> </p>
+			</li>
+		<% end %>
+	</ul>

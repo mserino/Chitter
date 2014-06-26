@@ -1,5 +1,6 @@
 post '/new_cheet' do
-	cheet = params[:cheet]
-	Cheet.create(:cheet => cheet)
-	redirect to('/')
+	current_user.cheets.create!(cheet: params[:cheet])
+	# @cheets = Cheet.all
+	# erb :index, :layout => :layout
+	redirect to '/'
 end

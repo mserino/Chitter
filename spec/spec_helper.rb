@@ -1,5 +1,6 @@
 ENV["RACK_ENV"] = 'test'
 
+require 'debugger'
 require_relative './../app/server.rb'
 require 'database_cleaner'
 require 'capybara/rspec'
