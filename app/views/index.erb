@@ -1,18 +1,21 @@
 <% if current_user %>
 	<form action='/new_cheet' method='post'>
-		<input type='text' name='cheet'>
-		<input type='submit' value='Post!'>
+		<p><input type='text' name='cheet' class='post-cheet'></p>
+		<p><input type='submit' value='Post!' class='button form'></p>
 	</form>
 
 <% else %>
-	<p>You must be logged in to add a cheet</p>
+	<p class='must-login'>You must be logged in to add a cheet</p>
 <% end %>
-
-	<ul>
-		<% @cheets.reverse_each do |element| %>
-			<li>
-				<p><%= element.cheet %></p>
-				<p>posted by <%= element.user.username %> </p>
-			</li>
-		<% end %>
-	</ul>
+	
+	<h1>Recent Cheets</h1>
+	<div id='cheets'>
+		<ul>
+			<% @cheets.reverse_each do |element| %>
+				<li>
+					<p id='single-cheet'><%= element.cheet %></p>
+					<p id='cheet-author'>posted by <%= element.user.username %> </p>
+				</li>
+			<% end %>
+		</ul>
+	</div>

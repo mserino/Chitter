@@ -1,0 +1,199 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+* {
+  box-sizing: border-box;
+}
+
+html body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+header {
+	height: 60px;
+	width: 100%;
+	background-color: #8E44AD;
+	color: white;
+	display: flex;
+	padding: 0 20px;
+	margin: 0px auto;
+}
+	header a {
+		text-decoration: none;
+		color: #D18BFF;
+		font-size: 36px;
+	}
+
+  /* every immediate child to be vertically centered */
+  header > * {
+    margin: auto 0;
+  }
+
+  header #logo {
+  	font-family: 'Lobster', cursive;
+    font-size: 36px;
+    display: flex;
+    margin-right: 20px;
+    color: #D18BFF;
+  }
+
+  header #user-links {
+    flex: 1; /* http://learnlayout.com/flexbox.html */
+    -webkit-flex: 1;
+    text-align: right;
+    color: #D18BFF;
+    font-size: 22px;
+/*    background-color: black;*/
+  }
+
+  header #user-links > * {
+    display: inline-block;
+  }
+
+h1 {
+	text-align: center;
+  font-size: 36px ;
+  color: #8E44AD;
+  margin: 10px 0 10px 0;
+}
+
+#container {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.4);*/
+  padding: 10px;
+}
+
+.button {
+  display: inline-block; /* display inline but have dimensions */
+  width: 130px;
+  background-color: #2980B9;
+  border: 2px solid #3498DB;
+  color: #34D0DB; /*text colour*/
+  text-decoration: none; /*no underlining*/
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 4px; /*rounded corners*/
+  margin-left: 5px;
+  margin-right: 5px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4); /*for readability*/
+  font-size: 16px;
+  cursor: pointer; /* pointer looks like a hand */
+}
+
+	.button.form {
+		margin-left: initial;
+		margin-right: initial;
+		font-size: 22px;
+		width: 400px;
+	}
+
+form {
+	width: 400px;
+	margin: 0 auto;
+  text-align: left;
+}
+
+	form.header {
+		width: initial;
+		margin: initial;
+	}
+
+	form.post-cheet {
+		background-color: black;
+		width: 800px;
+		margin: 0 auto;
+	}
+
+  form p {
+    margin: 10px 0;
+  }
+
+  form input[type="text"], form input[type="password"] {
+    border: 1px solid #2980B9;
+    background-color: white;
+    border-radius: 4px; /*rounded corners*/
+    padding: 5px;
+    font-size: 22px;
+    width: 400px;
+  }
+
+  ::-webkit-input-placeholder {
+   color: #2980B9;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: #2980B9;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: #2980B9;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: #2980B9;  
+	}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -70px;
+}
+
+ul {
+	width: 80%;
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+li {
+  background-color: white;
+  border: 1px solid #3498DB;
+  color: #34D0DB; /*text colour*/
+  text-decoration: none; /*no underlining*/
+  padding: 5px 2px;
+  text-align: left;
+  border-radius: 4px; /*rounded corners*/
+
+	width: 100%;
+	margin: 10px 0 10px 0;
+}
+	
+	li #single-cheet {
+		font-size: 22px;
+		color: #2980B9;
+	}
+
+	li #cheet-author {
+		font-size: 16px;
+		text-align: left;
+		margin-top: 5px;
+		color: #9C70DA;
+	}
+
+
+.flash {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 0;
+  /*box-shadow: 0 0 3px rgba(0,0,0,0.4);*/
+  color: #006600;
+}
+	
+  .flash.notice {
+    background-color: rgba(67,183,120,0.75);
+  }
+
+  .flash.error {
+   background-color: rgba(169,29,42,0.75); 
+   color: white;
+  }
+
+.must-login {
+  	text-align: center;
+  	font-size: 22px;
+  }
