@@ -8,7 +8,7 @@ Chitter is a simple web application built in Sinatra, that simulates the popular
 ## How can you use it?
 You can find a working version following this link:
 
-(http://stormy-fortress-1436.herokuapp.com/) [Chitter]
+(http://stormy-fortress-1436.herokuapp.com) [Chitter]
 
 ## What can you do?
 - Sign up
