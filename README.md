@@ -21,6 +21,7 @@ Chitter is a simple web application built in Sinatra, that simulates the popular
 - CSS
 
 ## What it looks like
-(https://dl.dropboxusercontent.com/u/79955713/github/chitter-screenshot.png)
+![Chitter](https://dl.dropboxusercontent.com/u/79955713/github/chitter-screenshot.png "chitter")
+
 
 ## How can you use it?
