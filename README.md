@@ -1,6 +1,6 @@
 Chitter
 =======
-This is the week #6 friday test for [Makers Academy](http://www.makersacademy.com)
+This is the week #6 friday test for [Makers Academy](http://www.makersacademy.com).
 
 ## What is it?
 Chitter is a simple web application built in Sinatra, that simulates the popular social network Twitter.
